@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/logins.css">
+    <script src="/javascripts/logins.js"></script>
+</head>
+<body>
+ 
+  <div class="first">
+  <div class="two">
+  <h2><%=title%></h2>
+  </div>
+  <form  method="post" action="/login">
+  	<br>
+  	<label for="username">User name:</label>
+  	<br>
+    <input type="text"  name="user" id="user" title="username" placeholder="username..." />
+    <br>
+    <label for="pwd">Password:</label>
+    <br>
+    <input type="password" name="password" title="password" placeholder="password..." />
+    <br>
+    <p><%=error%><p>
+    <input type="submit" name="login" id="submit" value="login"></input>    
+    <input type="submit" name="creat" id="creat" value="creat"></input>    
+  </form>
+</div><!--end log form -->
+
+</body>
+</html>
